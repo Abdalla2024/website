@@ -244,8 +244,10 @@ document.addEventListener('DOMContentLoaded', function() {
         document.body.appendChild(scrollIndicator);
     }
 
-    // Initialize scroll indicator
-    addScrollIndicator();
+    // Initialize scroll indicator only on the main page
+    if (window.location.pathname.endsWith('index.html') || window.location.pathname.endsWith('/') || window.location.pathname === '') {
+        addScrollIndicator();
+    }
 
     // Add keyboard navigation support
     document.addEventListener('keydown', function(e) {
