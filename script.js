@@ -200,7 +200,7 @@ document.addEventListener('DOMContentLoaded', function() {
             bottom: 30px;
             left: 50%;
             transform: translateX(-50%);
-            background: rgba(0, 48, 73, 0.9);
+            background: linear-gradient(135deg, #9333ea 0%, #ec4899 100%);
             color: white;
             padding: 12px;
             border-radius: 50%;
@@ -208,6 +208,8 @@ document.addEventListener('DOMContentLoaded', function() {
             transition: all 0.3s ease;
             z-index: 100;
             animation: bounce 2s infinite;
+            box-shadow: 0 4px 20px rgba(147, 51, 234, 0.4);
+            border: 1px solid rgba(255, 255, 255, 0.2);
         `;
 
         // Add bounce animation
